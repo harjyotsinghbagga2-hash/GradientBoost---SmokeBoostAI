@@ -1,0 +1,11 @@
+# Pinned to match the exact environment the model file was (re-)serialized
+# with. Do not loosen scikit-learn/numpy/joblib without re-running
+# model/resave_model.py, or you may hit ModuleNotFoundError / AttributeError
+# on load in a different Python/sklearn build (this happened once already
+# on Streamlit Cloud's Python 3.14 image with an unpinned scikit-learn).
+streamlit>=1.38
+scikit-learn==1.8.0
+numpy==2.4.4
+joblib==1.5.3
+pandas>=2.0
+plotly>=5.20
